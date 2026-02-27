@@ -42,7 +42,8 @@ You can freely choose which model plays which role. Supported models:
 ### Installation
 
 ```bash
-git clone 
+git clone https://github.com/lucadilo/ai-peer-review.git
+cd ai-peer-review
 npm install
 npm run dev
 ```
@@ -55,7 +56,7 @@ This app calls AI provider APIs **directly from the browser** using your own key
 
 Get your keys here:
 - **Gemini** → [aistudio.google.com/apikey](https://aistudio.google.com/apikey)
-- **GPT-4o** → [platform.openai.com/api-keys](https://platform.openai.com/api-keys)
+- **ChatGPT** → [platform.openai.com/api-keys](https://platform.openai.com/api-keys)
 - **Claude** → [console.anthropic.com](https://console.anthropic.com/)
 
 > You only need **one key** to use the app — just assign the same model to all three roles.  
@@ -128,6 +129,24 @@ git push origin feature/my-awesome-change
 # 4. Open a Pull Request from your branch → main
 ```
 
+Ideas for contributions:
+- Add support for new AI models
+- Add session history / local storage persistence
+- Add an export button to download generated files as a ZIP
+- Add a synthesis step that merges the two reviews into a final improved version
+
+---
+
 ## License
 
-[MIT](LICENSE) — free to use, modify, and distribute.
+This project is licensed under the **GNU Affero General Public License v3 (AGPL v3)** for personal, educational, and open-source use.
+
+**Commercial use requires a separate license agreement.**  
+If you intend to use this software in a commercial product, SaaS platform, or any for-profit context, please read [COMMERCIAL_LICENSE.md](COMMERCIAL_LICENSE.md) and get in touch.
+
+Free to use if you are:
+- Working on a personal project
+- Using it for educational or research purposes
+- Contributing to an open-source project licensed under AGPL v3
+
+See [LICENSE](LICENSE) for the full terms.
