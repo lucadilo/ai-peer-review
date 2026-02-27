@@ -1,0 +1,5 @@
+{
+  "name": "AI Peer Review",
+  "description": "A multi-model AI platform for code generation, architectural planning, and peer-to-peer review using Gemini, GPT-4, and Claude.",
+  "requestFramePermissions": []
+}
