@@ -6,13 +6,19 @@
 
 ## What It Does
 
-You describe what you want to build — in plain language — and the app orchestrates three AI models to collaborate on it:
+You describe what you want to build — in plain language — and the app orchestrates three AI models to collaborate on it in three different ways:
 
-1. **Generator** — one model writes the full code, file by file, with architecture notes
-2. **Reviewer 1 & 2** — two other models independently analyze the generated code and each return:
-   - A detailed review (correctness, security, best practices, completeness)
-   - A quality score from **1 to 10**
-   - A final verdict: **APPROVED ✅** or **NEEDS REVISION ⚠️**
+*1 - Review Mode:*
+   - Model A acts as the fast coder and generates the initial code based on your prompt.
+   - Model B acts as the senior reviewer, watches the generated code, points out any flaws, and provides a corrected version.
+
+*2 - Companion Mode:*
+   - Model A acts as the software architect, reasoning about the problem and providing a clear, step-by-step architecture plan.
+   - Model B acts as the developer and implements the actual code based on the provided plan.
+
+*3 - Challenge Mode:*
+   - Both models compete concurrently to build the best possible code for your request.
+   - Once they finish, the app displays their responses side-by-side along with basic parameters like Response Time, Code Length (characters), and Primary Language, allowing you to decide which one performed better.
 
 All three models run with no backend — everything happens directly in your browser.
 
